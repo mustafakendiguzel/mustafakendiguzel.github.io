@@ -1,0 +1,53 @@
+<style>
+  .balls {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+    background: linear-gradient(
+      35deg,
+      #ccffff,
+      #ffcccc
+    );
+  margin-top:50px;
+  position: fixed;
+  animation-name: freix;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  
+}
+#ball1 { 
+  left: 27%;
+}
+#ball2 {
+  left: 65%;
+}
+ball1:hover {
+  background-color: red;
+  color: blue;
+}
+
+
+@keyframes freix {
+  0% {
+    top: 0px;
+    left 0px;
+    opacity: 5.5;
+  }
+  50% {
+    top: 150px;
+    left 0px;
+    opacity: 0.1;
+    transform: scale(1.5);
+  }
+  100% {
+    top: 0px;
+    left 30%;
+    opacity: 5.5;
+    transform: scale(1);
+  }
+}
+</style>
+<main>
+  <div class="balls" id="ball1"></div>
+  <div class="balls" id="ball2"></div>
+</main>
